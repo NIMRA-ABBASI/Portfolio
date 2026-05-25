@@ -1,0 +1,44 @@
+.section-contact {
+  text-align: center;
+  padding: 140px 0 120px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.contact-eyebrow { color: var(--accent); margin: 0 0 16px; }
+.contact-title {
+  font-size: clamp(40px, 7vw, 68px);
+  color: var(--text-bright);
+  margin: 0 0 20px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+.contact-body {
+  color: var(--text);
+  line-height: 1.7;
+  margin: 0 auto 40px;
+  max-width: 520px;
+}
+.contact-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 28px;
+  margin-top: 56px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+}
+.contact-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-strong);
+  transition: color 0.2s, transform 0.2s;
+}
+.contact-links a:hover { color: var(--accent); transform: translateY(-2px); }
+
+.footer {
+  text-align: center;
+  padding: 24px 0 32px;
+  color: var(--muted);
+}
+.footer p { margin: 0; font-size: 12px; opacity: 0.7; }

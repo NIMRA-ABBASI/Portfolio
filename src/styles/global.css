@@ -1,0 +1,71 @@
+:root {
+  --navy: #0a192f;
+  --navy-deep: #060f1f;
+  --navy-light: #112240;
+  --slate: #8892b0;
+  --slate-light: #a8b2d1;
+  --slate-lighter: #ccd6f6;
+  --white: #e6f1ff;
+  --accent: #64ffda;
+  --accent-soft: rgba(100, 255, 218, 0.1);
+  --accent-tint: rgba(100, 255, 218, 0.07);
+  --bg: var(--navy);
+  --surface: var(--navy-light);
+  --text: var(--slate-light);
+  --text-strong: var(--slate-lighter);
+  --text-bright: var(--white);
+  --muted: var(--slate);
+  --line: rgba(136, 146, 176, 0.2);
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+}
+[data-theme="light"] {
+  --navy: #f4f1ea;
+  --navy-deep: #e8e3d8;
+  --navy-light: #fffdf8;
+  --slate: #6b6557;
+  --slate-light: #4a4538;
+  --slate-lighter: #2a261d;
+  --white: #14110a;
+  --accent: #0f8a72;
+  --accent-soft: rgba(15, 138, 114, 0.1);
+  --accent-tint: rgba(15, 138, 114, 0.05);
+  --line: rgba(107, 101, 87, 0.22);
+}
+[data-theme="phantom"] {
+  --navy: #1a1814;
+  --navy-deep: #100e0b;
+  --navy-light: #25221d;
+  --slate: #8b8579;
+  --slate-light: #c2bba9;
+  --slate-lighter: #ddd5c1;
+  --white: #f3ead4;
+  --accent: #d4a574;
+  --accent-soft: rgba(212, 165, 116, 0.12);
+  --accent-tint: rgba(212, 165, 116, 0.06);
+  --line: rgba(212, 165, 116, 0.18);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+a { color: var(--accent); text-decoration: none; }
+::selection { background: var(--accent); color: var(--bg); }
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: var(--navy-deep); }
+::-webkit-scrollbar-thumb { background: var(--navy-light); border-radius: 4px; border: 2px solid var(--navy-deep); }
+::-webkit-scrollbar-thumb:hover { background: var(--slate); }
+#root { min-height: 100vh; }
+[data-theme="light"] ::-webkit-scrollbar-track { background: var(--navy-deep); }
+[data-theme="light"] ::-webkit-scrollbar-thumb { background: var(--slate); border: 2px solid var(--navy-deep); }
+[data-theme="phantom"] ::-webkit-scrollbar-track { background: var(--navy-deep); }
+[data-theme="phantom"] ::-webkit-scrollbar-thumb { background: var(--navy-light); border: 2px solid var(--navy-deep); }

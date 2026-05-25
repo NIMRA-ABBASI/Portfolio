@@ -1,0 +1,60 @@
+import type { Project } from '../types';
+
+export const projects: Project[] = [
+  {
+    name: 'Urdu Shikeyn',
+    blurb: 'An augmented-reality mobile app that teaches Urdu vocabulary by overlaying letterforms and words onto real-world objects. Designed for early learners.',
+    tags: ['AR', 'Unity', 'Blender', 'Vuforia'],
+    accent: '#9B6DFF',
+    github: 'https://github.com/NIMRA-ABBASI',
+    demo: 'https://1drv.ms/v/c/03666de57119c66f/IQA1hznxmIZ3Q4yOzMrsJH--AZ1mASlUrB2gZWCANCtbMtk?e=96KDFI',
+  },
+  {
+    name: 'E-commerce Store',
+    blurb: 'A reference e-commerce cart with persistent storage, quantity controls, promo codes and a checkout flow.',
+    tags: ['react', 'node-js', 'mongodb','ts'],
+    accent: '#F59E0B',
+    github: 'https://github.com/NIMRA-ABBASI/E-commerce-Store',
+    demo: 'https://github.com/NIMRA-ABBASI/E-commerce-Store',
+  },
+  {
+    name: 'Food Recipe App',
+    blurb: 'Search, save and step through recipes with smart filtering by ingredients on hand. Clean cards, fast search, offline-friendly.',
+    tags: ['react', 'ts', 'tailwind'],
+    accent: '#22C55E',
+    github: 'https://github.com/NIMRA-ABBASI/Food-Recipe-App',
+    demo: 'https://github.com/NIMRA-ABBASI/Food-Recipe-App',
+  },
+  {
+    name: 'Expense Tracker',
+    blurb: 'Personal finance dashboard with monthly budgets, category breakdowns, and CSV import. Charts you can actually read.',
+    tags: ['html', 'css', 'javascript'],
+    accent: '#60A5FA',
+    github: 'https://github.com/NIMRA-ABBASI/Expense-Tracker',
+    demo: 'https://github.com/NIMRA-ABBASI/Expense-Tracker',
+  },
+  {
+    name: 'Chat App',
+    blurb: 'Realtime chat with rooms, presence and typing indicators. Built to learn websockets end-to-end.',
+    tags: ['react', 'firebase'],
+    accent: '#F472B6',
+    github: 'https://github.com/NIMRA-ABBASI/Chat-app',
+    demo: 'https://github.com/NIMRA-ABBASI/Chat-app',
+  },
+  //  {
+  //   name: 'E-commerce Store',
+  //   blurb: 'A reference e-commerce cart with persistent storage, quantity controls, promo codes and a checkout flow.',
+  //   tags: ['react', 'node-js', 'mongodb','ts'],
+  //   accent: '#F472B6',
+  //   github: 'https://github.com/NIMRA-ABBASI/E-commerce-Store',
+  //   demo: 'https://github.com/NIMRA-ABBASI/E-commerce-Store',
+  // },
+  // {
+  //   name: 'Portfolio v2',
+  //   blurb: 'This site — a long-form play with constellation animations, theme switching and a tweak panel for design exploration.',
+  //   tags: ['react', 'tailwind', 'ts'],
+  //   accent: '#64FFDA',
+  //   github: 'https://github.com/',
+  //   demo: '#',
+  // },
+];

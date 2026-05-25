@@ -1,0 +1,67 @@
+.timeline { position: relative; padding-left: 0; }
+.tl-item {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+.tl-marker {
+  display: flex; flex-direction: column; align-items: center;
+  position: relative;
+  height: 100%;
+}
+.tl-dot {
+  width: 14px; height: 14px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 2px solid var(--accent);
+  box-shadow: 0 0 0 5px var(--accent-soft);
+  margin-top: 8px;
+  flex-shrink: 0;
+}
+.tl-line {
+  width: 1px;
+  flex: 1;
+  background: linear-gradient(180deg, var(--accent), transparent);
+  margin-top: 8px;
+  min-height: 60px;
+}
+.tl-head { margin-bottom: 8px; }
+.tl-role {
+  font-size: 22px;
+  color: var(--text-bright);
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.tl-at { color: var(--accent); margin: 0 4px; }
+.tl-company { color: var(--accent); }
+.tl-period { color: var(--muted); margin: 6px 0 0; }
+.tl-summary { color: var(--text); line-height: 1.7; margin: 12px 0 24px; max-width: 700px; }
+.tl-projects { display: flex; flex-direction: column; gap: 16px; max-width: 760px; }
+.tl-proj {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 2px solid var(--accent);
+  padding: 20px 24px;
+  border-radius: 0 6px 6px 0;
+  transition: transform 0.2s, border-color 0.2s;
+}
+.tl-proj:hover { transform: translateX(4px); border-left-color: var(--accent); }
+.tl-proj-head {
+  display: flex; align-items: baseline; justify-content: space-between;
+  gap: 16px; margin-bottom: 8px; flex-wrap: wrap;
+}
+.tl-proj-head h4 { margin: 0; color: var(--text-bright); font-size: 17px; font-weight: 600; }
+.tl-proj-role { color: var(--accent); font-size: 12px; }
+.tl-proj p { color: var(--text); margin: 0 0 12px; line-height: 1.6; font-size: 15px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  color: var(--c, var(--accent));
+  background: color-mix(in srgb, var(--c, var(--accent)) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--c, var(--accent)) 30%, transparent);
+}

@@ -1,0 +1,44 @@
+.skills-wrap { display: flex; flex-direction: column; gap: 40px; }
+.skill-group-label {
+  display: flex; align-items: center; gap: 14px;
+  margin-bottom: 24px;
+  color: var(--accent);
+}
+.skill-group-line {
+  flex: 1; height: 1px;
+  background: linear-gradient(90deg, var(--accent-soft), transparent);
+}
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+.tech-badge {
+  display: flex; flex-direction: column; align-items: center; gap: 10px;
+  cursor: default;
+}
+.tech-badge-circle {
+  position: relative;
+  border-radius: 50%;
+  background: var(--surface);
+  display: grid; place-items: center;
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.04) inset,
+    0 14px 30px -16px rgba(2,12,27,0.7);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s;
+  overflow: hidden;
+}
+.tech-badge:hover .tech-badge-circle {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 18px 40px -16px rgba(2,12,27,0.9);
+}
+.tech-badge-ring {
+  position: absolute; inset: 0; border-radius: 50%;
+  pointer-events: none;
+}
+.tech-badge-label {
+  font-size: 12px;
+  font-family: var(--font-mono);
+  color: var(--text-strong);
+}
