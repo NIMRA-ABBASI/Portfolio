@@ -9,7 +9,7 @@ export const experience: ExperienceItem[] = [
     summary: 'Building internal web systems that improve efficiency and streamline internal processes. Working across the stack — from interactive frontends to APIs, data models, and deployments.',
     projects: [
       {
-        name: 'Pilot Electronic Folder',
+        name: 'Electronic Records Management System (ERMS)',
         role: 'Frontend Developer',
         contributions: 'Built dynamic dashboards with real-time data visualization using React Hooks. Developed reusable components, integrated Spring Boot APIs with complex state management, and optimized performance through refactoring and efficient component structuring.',
         tags: ['react', 'spring boot', 'tailwind','core ui'],
