@@ -14,7 +14,14 @@ export function About() {
             into a career building full-stack web apps.
           </p>
           <p>
-            Today I work at the <span className="hl">Pakistan Air Force</span>,
+            Today I work at the 
+            <span className="hl">
+              <a
+                className="btn btn-ghost btn-sm"
+                href="/User-Guide.pdf"
+                download="User-Guide.pdf"
+                >Pakistan Air Force</a>
+            </span>,
             building internal software systems and full-stack applications that
             support day-to-day operations.
           </p>
